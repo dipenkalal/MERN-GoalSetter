@@ -21,7 +21,7 @@ const setGoals = asyncHandler(async (req,res) => {
     const goals = await Goal.create({
         text: req.body.text
     })
-    res.status(200).json(goal)
+    res.status(200).json(goals)
 })
 
 //update goals
